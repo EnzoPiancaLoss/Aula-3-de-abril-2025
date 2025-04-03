@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora de tabuada</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    
+    <body>
+
+        
+        <h1>Tabuada</h1>
+        <p class="TextoDeInput">Veja a tabuada</p>
+        
+        
+        <form action="main.html">
+            <label for="lname" class="TextoDeInput">Valor da tabuada:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lmax" class="TextoDeInput">Ir até:</label>
+            <input type="text" id="lmax" name="lmax"><br><br>
+        </form>
+        
+        <button onclick="Iniciar()">Calcular!</button>
+        <div id = "Parafragro">
+            <p></p>
+            <script src="calcular.js"></script>
+        </div>
+        
+    </body>
+
+</html>

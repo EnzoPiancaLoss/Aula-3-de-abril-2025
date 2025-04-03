@@ -1,0 +1,24 @@
+body {
+    background-color: mediumturquoise;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    justify-content: center; 
+    align-items: center;
+}
+
+.TextoDeInput {
+    font-size: medium;
+    color: purple;
+    text-align: center;
+}
+
+.TextoDeOutput {
+    font-size: medium;
+    color:  rgb(255, 20, 147);
+    text-align: center;
+}
