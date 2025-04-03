@@ -4,31 +4,27 @@ function Calcular(valorInformado, valorMaximo) {
 
     for (let i = 0; i < valorMaximo; i++) {
         x += valorInformado;
-        ArrayDeResultados.push(x)    
+        ArrayDeResultados.push(x) //Push é basicamente o append
         console.log(valorInformado, "*", i + 1, "=", x);
     }
     console.log(ArrayDeResultados);
-    return ArrayDeResultados;
+    return ArrayDeResultados; //Devolve Array
 }
 
 function EscreverTabuada(arrayInformado) {
     console.log(arrayInformado);
-    document.getElementById("Parafragro").innerHTML = "";
+    document.getElementById("Parafragro").innerHTML = ""; // innerHTML = "" Deleta os filhotes do Paragrafo Similar ao CleanChilds()
 
     for (let i = 0; i < arrayInformado.length; i++) {
         
 
-        //let div = document.getElementById("Parafragro");
-        //div.removeChild(div.firstChild);
-        
         var novoParagrafo = document.createElement("p");
 
-        novoParagrafo.classList.add("TextoDeOutput")
+        novoParagrafo.classList.add("TextoDeOutput") // Adiciona uma classe de css para os paragrafrosque vão ser cirados
 
         novoParagrafo.textContent = String(i + 1) + " * " + String(arrayInformado[0]) + " = " + String(arrayInformado[i]) ,"</p>";
         document.getElementById("Parafragro").appendChild(novoParagrafo)
 
-        //document.writeln();
     }
 
 }
@@ -38,7 +34,7 @@ function EscreverTabuada(arrayInformado) {
 function Iniciar() {
     // Pega o valor do text feild
     let Numero = document.getElementById("lname").value;
-    let maximo = document.getElementById("lmax").value;
+    let maximo = document.getElementById("lmax").value; //Pega os dois valores
 
     console.log(Numero);
 
@@ -49,7 +45,8 @@ function Iniciar() {
     console.log( EscreverTabuada(y) );
 }
 
+
+//Isso aqui em baixo é só para teste de debugging
 // let ValorDaTabuada = 12;
 // let ValorMaximo = 10;
 // EscreverTabuada(Calcular(ValorDaTabuada, ValorMaximo));
-//Teste();
